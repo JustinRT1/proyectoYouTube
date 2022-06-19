@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 72px auto;
+    grid-template-rows: 56px 58px auto;
+    grid-template-areas: "header header" "left-bar top-bar" "left-bar main";
+}
+
+.header{
+    grid-area: header;
+    background-color: cornflowerblue;
+}
+
+.left-bar{
+    grid-area: left-bar;
+    background-color: blueviolet;
+}
+
+.top-bar{
+    grid-area: top-bar;
+    background-color: brown;
+}
+
+.main{
+    grid-area: main;
+    background-color: burlywood;
+}
