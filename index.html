@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="https://www.youtube.com/s/desktop/56f7f6c9/img/favicon_32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>YouTube</title>
 </head>
+
 <body>
-    <div class="main-container">
+    <div class="container-main">
+        <!-- * ----- HEADER ----- -->
         <header class="header">
-            Header
+            <div class="container-logo">
+                <button class="btn-menu"><span class="material-symbols-outlined">menu</span></button>
+                <a href="#"><img src="./imgs/youtube-logo-id3stow-fh.svg" alt="logo-youtube"></i><span class="char-logo">CO</span></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" name="search-bar" id="" placeholder="Buscar">
+                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                <button type="submit" class="btn-mic"><span class="material-symbols-outlined">mic</span></button>
+            </div>
+            <div class="buttons-header">
+                <button type="submit"><span class="material-symbols-outlined">video_call</span></button>
+                <button type="submit"><span class="material-symbols-outlined">grid_on</span></button>
+                <button type="submit"><span class="material-symbols-outlined">notifications</span></button>
+                <a href="#" class="user-icon"><img src="./imgs/8machine-_-9SS3n6hhMBY-unsplash.jpg" alt="user-icon"></a>
+            </div>
         </header>
+        <!-- * ----- LEFT-BAR ----- -->
         <nav class="left-bar" aria-label="left-bar">Nav-left</nav>
-        <nav class="top-bar" aria-label="top-bar">Nav-top</nav>
+        <!-- * ----- FILTER ----- -->
+        <nav class="filter" aria-label="filter">Filter</nav>
+        <!-- * ----- MAIN ----- -->
         <main class="main">Contenido principal</main>
     </div>
 </body>
+
 </html>
