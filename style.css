@@ -1,8 +1,9 @@
 :root {
-    --BgrHeader: #212121;
+    --BgrHeader: #202020;
     --BrgMain: #181818;
     --BrgNav: #212121;
     --BrgHoverNav: #383838;
+    --BrgButtons: #373737;
 }
 
 * {
@@ -173,13 +174,13 @@ html {
 }
 
 .left-bar .buttons-nav {
-    display: grid;
+    cursor: pointer;
     grid-template-columns: 72px;
     grid-template-rows: repeat(5, 73px);
     grid-template-areas: "item-1""item-2""item-3""item-4""item-5";
     font-size: 10px;
     color: white;
-    cursor: pointer;
+    display: grid;
 }
 
 .left-bar .buttons-nav .item-1 .material-symbols-outlined {
@@ -191,8 +192,8 @@ html {
 }
 
 .left-bar .buttons-nav .item-1 {
-    grid-area: item-1;
     display: flex;
+    grid-area: item-1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -204,8 +205,8 @@ html {
 }
 
 .left-bar .buttons-nav .item-2 {
-    grid-area: item-2;
     display: flex;
+    grid-area: item-2;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -217,8 +218,8 @@ html {
 }
 
 .left-bar .buttons-nav .item-3 {
-    grid-area: item-3;
     display: flex;
+    grid-area: item-3;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -230,8 +231,8 @@ html {
 }
 
 .left-bar .buttons-nav .item-4 {
-    grid-area: item-4;
     display: flex;
+    grid-area: item-4;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -243,8 +244,8 @@ html {
 }
 
 .left-bar .buttons-nav .item-5 {
-    grid-area: item-5;
     display: flex;
+    grid-area: item-5;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -256,8 +257,37 @@ html {
 
 /* * ---------- FILTER ---------- */
 .filter {
+    display: flex;
     grid-area: filter;
-    background-color: brown;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--BrgButtons);
+    border-bottom: 1px solid var(--BrgButtons);
+    background-color: var(--BgrHeader);
+}
+
+.filter .buttons-filter1 {
+    cursor: pointer;
+    border: none;
+    width: auto;
+    height: 33px;
+    padding: 0 14px;
+    border-radius: 20px;
+}
+
+.filter .buttons-filter {
+    cursor: pointer;
+    border: 1px solid #535353;
+    width: auto;
+    height: 33px;
+    padding: 0 14px;
+    background-color: var(--BrgButtons);
+    color: white;
+    border-radius: 20px;
+}
+
+.filter .buttons-filter:hover {
+    background-color: #484848;
 }
 
 /* * ---------- MAIN ---------- */
