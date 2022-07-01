@@ -4,15 +4,13 @@
     --BrgNav: #212121;
     --BrgHoverNav: #383838;
     --BrgButtons: #373737;
+    --Info: #AAAAAA;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     font-family: 'Roboto';
 }
 
@@ -31,6 +29,18 @@ html {
     grid-template-areas: "header header""left-bar filter""left-bar main";
     width: 100vw;
     height: 100vh;
+    overflow: auto;
+}
+
+.container-main::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--BrgMain);
+}
+
+.container-main::-webkit-scrollbar-thumb {
+    border: 4px solid var(--BrgMain);
+    border-radius: 20px;
+    background-color: var(--Info);
 }
 
 /* * ---------- HEADER ---------- */
@@ -293,5 +303,79 @@ html {
 /* * ---------- MAIN ---------- */
 .main {
     grid-area: main;
-    background-color: burlywood;
+    background-color: var(--BrgMain);
+    padding: 20px;
 }
+
+.main .grid-videos {
+    display: grid;
+    gap: 40px 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main .grid-videos .container-media {
+    cursor: pointer;
+    width: 274px;
+    transition: 500ms;
+    transition-delay: 800ms;
+}
+
+.main .grid-videos .container-media:hover {
+    transform: scale(1.3);
+    background-color: var(--BgrHeader);
+}
+
+.main .grid-videos .container-media .container-video img {
+    width: 274px;
+    height: 154px;
+}
+
+.main .grid-videos .container-media .container-video:hover img {
+    display: none;
+}
+
+.main .grid-videos .container-media .container-video video {
+    display: none;
+    width: 274px;
+    height: 154px;
+}
+
+.main .grid-videos .container-media .container-video:hover video {
+    display: block;
+}
+
+.main .grid-videos .container-media .info {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 52px auto;
+    grid-template-areas: "img titulo""img mas-info";
+}
+
+.main .grid-videos .container-media .info img{
+    grid-area: img;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.main .grid-videos .container-media .info h2{
+    grid-area: titulo;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+
+.main .grid-videos .container-media .info p{
+    grid-area: mas-info;
+    margin-top: 5px;
+    color: var(--Info);
+    font-size: 14px;
+}
+
+.main .grid-videos .container-media .btn-video {
+    display: none;
+}
+
+/* .main .grid-videos .container-media:hover button{
+    display: flex;
+} */
