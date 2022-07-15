@@ -132,6 +132,10 @@ body {
 /* * ---------- LEFT-BAR ---------- */
 .left-bar {
     grid-area: left-bar;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
 }
 
 .left-bar .buttons-nav {
