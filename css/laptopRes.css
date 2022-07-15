@@ -163,7 +163,7 @@ body::-webkit-scrollbar-thumb {
 
 .main .grid-videos {
     display: grid;
-    gap: 40px 15px;
+    gap: 40px 8px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb {
 .main .grid-videos .container-media .info {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 52px auto;
+    grid-template-columns: 59px auto;
     grid-template-areas: "img titulo""img mas-info";
 }
 
