@@ -1,0 +1,39 @@
+/* * ---------- HEADER ---------- */
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo search icons";
+}
+
+.header .search-bar {
+    display: flex;
+    grid-area: search;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 90px;
+}
+
+.header .search-bar input {
+    display: flex;
+    width: 250px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+/* * ---------- MAIN ---------- */
+.main {
+    padding: 20px;
+}
+
+.main .grid-videos {
+    display: grid;
+    margin: 0 auto;
+    gap: 40px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+}

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="(min-width: 426px)" media="(max-width: 768px)" href="./css/tabletRes.css">
+    <link rel="stylesheet" media="(min-width: 769px)" media="(max-width: 1440px)" href="./css/laptopRes.css">
     <link rel="icon" href="https://www.youtube.com/s/desktop/56f7f6c9/img/favicon_32x32.png" sizes="32x32">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,217 +15,195 @@
 </head>
 
 <body>
-    <div class="container-main">
-        <!-- * ----- HEADER ----- -->
-        <header class="header">
-            <div class="container-logo">
-                <button class="btn-menu"><span class="material-symbols-outlined">menu</span></button>
-                <a href="#"><img src="./imgs/youtube-logo-id3stow-fh.svg" alt="logo-youtube"></i><span
-                        class="char-logo">CO</span></a>
-            </div>
-            <div class="search-bar">
-                <input type="text" name="search-bar" id="" placeholder="Buscar">
-                <button type="submit"><span class="material-symbols-outlined">search</span></button>
-                <button type="submit" class="btn-mic"><span class="material-symbols-outlined">mic</span></button>
-            </div>
-            <div class="buttons-header">
-                <button type="submit"><span class="material-symbols-outlined">video_call</span></button>
-                <button type="submit"><span class="material-symbols-outlined">grid_on</span></button>
-                <button type="submit"><span class="material-symbols-outlined">notifications</span></button>
-                <a href="#" class="user-icon"><img src="./imgs/8machine-_-9SS3n6hhMBY-unsplash.jpg" alt="user-icon"></a>
-            </div>
-        </header>
-        <!-- * ----- LEFT-BAR ----- -->
-        <nav class="left-bar" aria-label="left-bar">
-            <div class="buttons-nav">
-                <buttons type="submit" class="item-1"><span class="material-symbols-outlined">home</span><br>Inicio
-                </buttons>
-                <buttons type="submit" class="item-2"><span
-                        class="material-symbols-outlined">explore</span><br>Explorar</buttons>
-                <buttons type="submit" class="item-3"><span
-                        class="material-symbols-outlined">slow_motion_video</span><br>Shorts</buttons>
-                <buttons type="submit" class="item-4"><span
-                        class="material-symbols-outlined">subscriptions</span><br>Suscripciones</buttons>
-                <buttons type="submit" class="item-5"><span
-                        class="material-symbols-outlined">video_library</span><br>Biblioteca</buttons>
-            </div>
-        </nav>
-        <!-- * ----- FILTER ----- -->
-        <section class="filter">
-            <button type="submit" class="buttons-filter1">Todo</button>
-            <button type="submit" class="buttons-filter">En directo</button>
-            <button type="submit" class="buttons-filter">Música</button>
-            <button type="submit" class="buttons-filter">Videojuegos</button>
-            <button type="submit" class="buttons-filter">Programación</button>
-            <button type="submit" class="buttons-filter">Pódcast</button>
-            <button type="submit" class="buttons-filter">Comedias</button>
-            <button type="submit" class="buttons-filter">Eventos</button>
-            <button type="submit" class="buttons-filter">Noticias</button>
-            <button type="submit" class="buttons-filter">Tendencias</button>
-            <button type="submit" class="buttons-filter">Novedad para ti</button>
-        </section>
-        <!-- * ----- MAIN ----- -->
-        <main class="main">
-            <div class="grid-videos">
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video1.jpg" alt="miniatura-video">
-                        <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
-                        <h2>Just the Two of Us - Cover</h2>
-                        <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
+    <!-- * ----- HEADER ----- -->
+    <header class="header">
+        <div class="container-logo">
+            <button class="btn-menu"><span class="material-symbols-outlined">menu</span></button>
+            <a href="#"><img src="./imgs/youtube-logo-id3stow-fh.svg" alt="logo-youtube"></i><span
+                    class="char-logo">CO</span></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" name="search-bar" id="" placeholder="Buscar">
+            <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            <button type="submit" class="btn-mic"><span class="material-symbols-outlined">mic</span></button>
+        </div>
+        <div class="buttons-header">
+            <button type="submit"><span class="material-symbols-outlined">video_call</span></button>
+            <button type="submit"><span class="material-symbols-outlined">grid_on</span></button>
+            <button type="submit"><span class="material-symbols-outlined">notifications</span></button>
+            <a href="#" class="user-icon"><img src="./imgs/8machine-_-9SS3n6hhMBY-unsplash.jpg" alt="user-icon"></a>
+        </div>
+    </header>
+    <!-- * ----- LEFT-BAR ----- -->
+    <nav class="left-bar" aria-label="left-bar">
+        <div class="buttons-nav">
+            <buttons type="submit" class="item-1"><span class="material-symbols-outlined">home</span><br>Inicio
+            </buttons>
+            <buttons type="submit" class="item-2"><span class="material-symbols-outlined">explore</span><br>Explorar
+            </buttons>
+            <buttons type="submit" class="item-3"><span
+                    class="material-symbols-outlined">slow_motion_video</span><br>Shorts</buttons>
+            <buttons type="submit" class="item-4"><span
+                    class="material-symbols-outlined">subscriptions</span><br>Suscripciones</buttons>
+            <buttons type="submit" class="item-5"><span
+                    class="material-symbols-outlined">video_library</span><br>Biblioteca</buttons>
+        </div>
+    </nav>
+    <!-- * ----- FILTER ----- -->
+    <section class="filter">
+        <button type="submit" class="buttons-filter1">Todo</button>
+        <button type="submit" class="buttons-filter">En directo</button>
+        <button type="submit" class="buttons-filter">Música</button>
+        <button type="submit" class="buttons-filter">Videojuegos</button>
+        <button type="submit" class="buttons-filter">Programación</button>
+        <button type="submit" class="buttons-filter">Pódcast</button>
+        <button type="submit" class="buttons-filter">Comedias</button>
+        <button type="submit" class="buttons-filter">Eventos</button>
+        <button type="submit" class="buttons-filter">Noticias</button>
+        <button type="submit" class="buttons-filter">Tendencias</button>
+        <button type="submit" class="buttons-filter">Novedad para ti</button>
+    </section>
+    <!-- * ----- MAIN ----- -->
+    <main class="main">
+        <div class="grid-videos">
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video1.jpg" alt="miniatura-video">
+                    <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
                 </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video1.jpg" alt="miniatura-video">
-                        <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
-                        <h2>Just the Two of Us - Cover</h2>
-                        <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video1.jpg" alt="miniatura-video">
-                        <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
-                        <h2>Just the Two of Us - Cover</h2>
-                        <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video1.jpg" alt="miniatura-video">
-                        <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
-                        <h2>Just the Two of Us - Cover</h2>
-                        <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video2.jpg" alt="miniatura-video">
-                        <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
-                        <h2>"Just The Two of Us" by Adikara Fardy</h2>
-                        <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video2.jpg" alt="miniatura-video">
-                        <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
-                        <h2>"Just The Two of Us" by Adikara Fardy</h2>
-                        <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video2.jpg" alt="miniatura-video">
-                        <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
-                        <h2>"Just The Two of Us" by Adikara Fardy</h2>
-                        <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video2.jpg" alt="miniatura-video">
-                        <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
-                        <h2>"Just The Two of Us" by Adikara Fardy</h2>
-                        <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video3.jpg" alt="miniatura-video">
-                        <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
-                        <h2>Proyecto Del Mes - Tzuzul Code</h2>
-                        <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video3.jpg" alt="miniatura-video">
-                        <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
-                        <h2>Proyecto Del Mes - Tzuzul Code</h2>
-                        <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video3.jpg" alt="miniatura-video">
-                        <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
-                        <h2>Proyecto Del Mes - Tzuzul Code</h2>
-                        <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
-                </div>
-                <div class="container-media">
-                    <div class="container-video">
-                        <img src="./imgs/video3.jpg" alt="miniatura-video">
-                        <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
-                    </div>
-                    <div class="info">
-                        <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
-                        <h2>Proyecto Del Mes - Tzuzul Code</h2>
-                        <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
-                        <button type="submit" class="btn-video">VER MÁS TARDE</button>
-                        <button type="submit" class="btn-video">AÑADIR A LA COLA</button>
-                    </div>
+                <div class="info">
+                    <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
+                    <h2>Just the Two of Us - Cover</h2>
+                    <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
                 </div>
             </div>
-        </main>
-    </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video1.jpg" alt="miniatura-video">
+                    <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
+                    <h2>Just the Two of Us - Cover</h2>
+                    <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video1.jpg" alt="miniatura-video">
+                    <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
+                    <h2>Just the Two of Us - Cover</h2>
+                    <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video1.jpg" alt="miniatura-video">
+                    <video src="./videos/Just the Two of Us - Cover(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels1_profile.jpg" alt="canal-icon">
+                    <h2>Just the Two of Us - Cover</h2>
+                    <p>Lucy Ellis<br>5,2 M de visualizaciones • hace 1 año</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video2.jpg" alt="miniatura-video">
+                    <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted
+                        controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
+                    <h2>"Just The Two of Us" by Adikara Fardy</h2>
+                    <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video2.jpg" alt="miniatura-video">
+                    <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted
+                        controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
+                    <h2>"Just The Two of Us" by Adikara Fardy</h2>
+                    <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video2.jpg" alt="miniatura-video">
+                    <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted
+                        controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
+                    <h2>"Just The Two of Us" by Adikara Fardy</h2>
+                    <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video2.jpg" alt="miniatura-video">
+                    <video src="./videos/Just The Two of Us_ by Adikara Fardy(720P_HD).mp4" autoplay muted
+                        controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels2_profile.jpg" alt="canal-icon">
+                    <h2>"Just The Two of Us" by Adikara Fardy</h2>
+                    <p>Adikara Fardy<br>7,8 M de visualizaciones • hace 4 años</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video3.jpg" alt="miniatura-video">
+                    <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
+                    <h2>Proyecto Del Mes - Tzuzul Code</h2>
+                    <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video3.jpg" alt="miniatura-video">
+                    <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
+                    <h2>Proyecto Del Mes - Tzuzul Code</h2>
+                    <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video3.jpg" alt="miniatura-video">
+                    <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
+                    <h2>Proyecto Del Mes - Tzuzul Code</h2>
+                    <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
+                </div>
+            </div>
+            <div class="container-media">
+                <div class="container-video">
+                    <img src="./imgs/video3.jpg" alt="miniatura-video">
+                    <video src="./videos/Proyecto Del Mes - Tzuzul Code(720P_HD).mp4" autoplay muted controls></video>
+                </div>
+                <div class="info">
+                    <img src="./imgs/channels3_profile.jpg" alt="canal-icon">
+                    <h2>Proyecto Del Mes - Tzuzul Code</h2>
+                    <p>David pérez<br>11 M visualizaciones • hace 3 semanas</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
